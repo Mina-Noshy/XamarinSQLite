@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUDApplication.View.Employee.Details">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblId" Text="{Binding Id}" IsVisible="false" />
+            <StackLayout Padding="10" BackgroundColor="White" Margin="10">
+                <Label Text="Name" />
+                <Label x:Name="lblName" Text="{Binding Name}" FontSize="Large" TextColor="Brown"/>
+            </StackLayout>
+            <StackLayout Padding="10" BackgroundColor="White" Margin="10">
+                <Label Text="Phone" />
+                <Label x:Name="lblPhone" Text="{Binding Phone}" FontSize="Large" TextColor="Brown"/>
+            </StackLayout>
+            <StackLayout Padding="10" BackgroundColor="White" Margin="10">
+                <Label Text="Email" />
+                <Label x:Name="lblEmail" Text="{Binding Email}" FontSize="Large" TextColor="Brown"/>
+            </StackLayout>
+            <StackLayout Padding="10" BackgroundColor="White" Margin="10">
+                <Label Text="Address" />
+                <Label x:Name="lblAddress" Text="{Binding Address}" FontSize="Large" TextColor="Brown"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="btnBack" Clicked="btnBack_Clicked" 
+                    Text="Back" Margin="5, 30"
+                    FontAttributes="Bold" TextColor="White"
+                    BackgroundColor="DeepPink" CornerRadius="5"
+                    HorizontalOptions="Start"/>
+                <Button x:Name="btnEdit" Clicked="btnEdit_Clicked" 
+                    Text="Edit" Margin="5, 30"
+                    FontAttributes="Bold" TextColor="White"
+                    BackgroundColor="DeepPink" CornerRadius="5"
+                    HorizontalOptions="Start"/>
+                <Button x:Name="btnDelete" Clicked="btnDelete_Clicked" 
+                    Text="Delete" Margin="5, 30"
+                    FontAttributes="Bold" TextColor="White"
+                    BackgroundColor="DeepPink" CornerRadius="5"
+                    HorizontalOptions="Start"/>
+            </StackLayout>
+           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

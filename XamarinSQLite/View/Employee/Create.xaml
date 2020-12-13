@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUDApplication.View.Employee.Create">
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Frame CornerRadius="10">
+                <Entry x:Name="txtName" Placeholder="Full Name" />
+            </Frame>
+            <Frame CornerRadius="10">
+                <Entry x:Name="txtPhone" Placeholder="Phone Number" />
+            </Frame>
+            <Frame CornerRadius="10">
+                <Entry x:Name="txtEmail" Placeholder="Email" />
+            </Frame>
+            <Frame CornerRadius="10">
+                <Entry x:Name="txtAddress" Placeholder="Address" />
+            </Frame>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="btnAdd" Clicked="btnAdd_Clicked" 
+                    Text="Save" Margin="5"
+                    FontAttributes="Bold" TextColor="White"
+                    BackgroundColor="DeepPink" CornerRadius="5"
+                    HorizontalOptions="Center"/>
+
+                <Button x:Name="btnCancel" Clicked="btnCancel_Clicked" 
+                    Text="Cancel" Margin="5"
+                    FontAttributes="Bold" TextColor="White"
+                    BackgroundColor="DeepPink" CornerRadius="5"
+                    HorizontalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

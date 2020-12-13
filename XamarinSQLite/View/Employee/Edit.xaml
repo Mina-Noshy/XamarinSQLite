@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUDApplication.View.Employee.Edit">
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label x:Name="lblId" Text="{Binding Id}" IsVisible="false" />
+            <Frame CornerRadius="10">
+                <Entry x:Name="txtName" Text="{Binding Name}" Placeholder="Full Name" />
+            </Frame>
+            <Frame CornerRadius="10">
+                <Entry x:Name="txtPhone" Text="{Binding Phone}" Placeholder="Phone Number" />
+            </Frame>
+            <Frame CornerRadius="10">
+                <Entry x:Name="txtEmail" Text="{Binding Email}" Placeholder="Email" />
+            </Frame>
+            <Frame CornerRadius="10">
+                <Entry x:Name="txtAddress" Text="{Binding Address}" Placeholder="Address" />
+            </Frame>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="btnCancel" Clicked="btnCancel_Clicked" 
+                    Text="Cancel" Margin="5"
+                    FontAttributes="Bold" TextColor="White"
+                    BackgroundColor="DeepPink" CornerRadius="5"
+                    HorizontalOptions="Center"/>
+                
+                <Button x:Name="btnSave" Clicked="btnSave_Clicked" 
+                    Text="Save" Margin="5"
+                    FontAttributes="Bold" TextColor="White"
+                    BackgroundColor="DeepPink" CornerRadius="5"
+                    HorizontalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

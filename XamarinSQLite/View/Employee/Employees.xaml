@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CRUDApplication.View.Employee.Employees">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="btnCreateNew" Clicked="btnCreateNew_Clicked" 
+                    Text="Create New" Margin="5"
+                    FontAttributes="Bold" TextColor="White"
+                    BackgroundColor="DeepPink" CornerRadius="5"
+                    HorizontalOptions="Start"/>
+
+            <ListView x:Name="lst" ItemSelected="lst_ItemSelected" IsPullToRefreshEnabled="True" Refreshing="lst_Refreshing">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" Detail="{Binding Address}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
